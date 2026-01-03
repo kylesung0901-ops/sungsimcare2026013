@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useAuth } from '@/contexts/AuthContext';
 import styles from './Header.module.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, isAdmin, logout } = useAuth();
 
   const mainMenuItems = [
     { name: '병원동행 서비스', href: '/service' },
@@ -14,10 +16,21 @@ const Header = () => {
   ];
 
   const secondaryMenuItems = [
-    { name: '로그인', href: '/login' },
-    { name: '회원가입', href: '/signup' },
+    ...(user ? [] : [
+      { name: '로그인', href: '/login' },
+      { name: '회원가입', href: '/signup' },
+    ]),
     { name: 'FAQ', href: '/faq' },
   ];
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      window.location.href = '/';
+    } catch (error) {
+      console.error('로그아웃 실패:', error);
+    }
+  };
 
   return (
     <header className={styles.header}>
@@ -59,6 +72,22 @@ const Header = () => {
                     </Link>
                   </li>
                 ))}
+                {user && (
+                  <>
+                    {isAdmin && (
+                      <li className={styles.navItem}>
+                        <Link href="/admin" onClick={() => setIsMenuOpen(false)}>
+                          관리자
+                        </Link>
+                      </li>
+                    )}
+                    <li className={styles.navItem}>
+                      <button onClick={handleLogout} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', textTransform: 'uppercase' }}>
+                        로그아웃
+                      </button>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
           </div>
