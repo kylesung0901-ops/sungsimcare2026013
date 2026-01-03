@@ -20,7 +20,7 @@ const AuthContext = createContext<AuthContextType>({
     logout: async () => { },
 });
 
-const ADMIN_EMAILS = ['Kylesung0901@gmail.com', 'shim113807@gmail.com'];
+const ADMIN_EMAILS = ['kylesung0901@gmail.com', 'shim113807@gmail.com'];
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<User | null>(null);
@@ -31,7 +31,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const auth = getAuth(app);
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user);
-            setIsAdmin(user ? ADMIN_EMAILS.includes(user.email || '') : false);
+            setIsAdmin(user ? ADMIN_EMAILS.includes(user.email?.toLowerCase() || '') : false);
             setLoading(false);
         });
 
