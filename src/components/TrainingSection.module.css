@@ -1,0 +1,64 @@
+.training {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.header {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptionCenter {
+    text-align: center;
+    color: var(--text-main);
+    max-width: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    /* Clinix style has figure/img with sharp corners */
+}
+
+.info {
+    padding: 0 10px;
+}
+
+.description {
+    font-size: 15px;
+    color: var(--text-main);
+    margin: 15px 0 25px;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

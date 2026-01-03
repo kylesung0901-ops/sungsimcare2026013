@@ -1,27 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Clinix Color Palette */
+  --brand-blue: #375EBC;
+  --brand-blue-dark: #274DA8;
+  --brand-blue-light: #78BCEE;
+  --brand-blue-mid: #4CA5E8;
+  --white: #FFFFFF;
+  --off-white: #EFF2F5;
+  --dark: #323232;
+  --text-main: #696969;
+  --text-muted: #8F8F8F;
+  --accent: #5EA9DD;
+  /* Light blue hover */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --max-width: 1600px;
+  --header-height: 170px;
 }
 
 * {
@@ -30,13 +24,108 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a:hover {
+  color: var(--accent);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Clinix Heading Style (Underline decoration) */
+.heading-decorate {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.heading-decorate::after {
+  content: "";
+  background: var(--brand-blue-mid);
+  height: 6px;
+  width: 100px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.heading-decorate-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Button default style from template */
+.btn-clinix {
+  background-color: var(--brand-blue);
+  color: var(--white);
+  padding: 10px 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 0;
+}
+
+.btn-clinix:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* Base Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Fold 7 / Specific Foldable Optimization */
+@media screen and (min-width: 600px) and (max-width: 1024px) and (min-aspect-ratio: 1/1) {
+  .container {
+    padding: 0 40px;
+    max-width: 95%;
   }
 }

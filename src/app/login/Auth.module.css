@@ -1,0 +1,55 @@
+.loginSection {
+    min-height: calc(100vh - var(--header-height) - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background: var(--off-white);
+}
+
+.authCard {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.authHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.authHeader h2 {
+    font-weight: 700;
+    color: var(--brand-blue-dark);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.links {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.links a {
+    color: var(--brand-blue);
+    margin: 0 10px;
+}

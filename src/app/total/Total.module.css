@@ -1,0 +1,53 @@
+.banner {
+    background: linear-gradient(rgba(39, 77, 168, 0.8), rgba(39, 77, 168, 0.8)), url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin-top: var(--header-height);
+    text-align: center;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.rolesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.roleCard {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid var(--brand-blue);
+}
+
+.roleCard h4 {
+    color: var(--brand-blue-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.roleCard ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.roleCard li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .rolesGrid {
+        grid-template-columns: 1fr;
+    }
+}

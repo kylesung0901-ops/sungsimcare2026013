@@ -1,0 +1,75 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549213821-4708d624e1d1?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    margin-top: var(--header-height);
+    text-align: center;
+    color: var(--white);
+}
+
+.banner h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner p {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    padding: 80px 0;
+    background: var(--off-white);
+}
+
+.faqContainer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faqItem {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faqQuestion {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    width: 100%;
+}
+
+.faqQuestion h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: left;
+}
+
+.faqAnswer {
+    padding: 0 30px 20px;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.faqQuestion i {
+    transition: transform 0.3s;
+    color: var(--brand-blue);
+}
+
+.faqQuestionActive i {
+    transform: rotate(180deg);
+}

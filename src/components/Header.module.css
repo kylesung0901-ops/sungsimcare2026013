@@ -1,0 +1,175 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--white);
+}
+
+.topBar {
+    background-color: var(--white);
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.topBar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topInfo {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.appointment {
+    color: var(--brand-blue);
+}
+
+.topContact {
+    display: flex;
+    gap: 20px;
+    color: var(--text-main);
+}
+
+.topContact span i {
+    color: var(--brand-blue);
+    margin-right: 5px;
+}
+
+.mainNavContainer {
+    background-color: var(--white);
+    border-bottom: 5px solid var(--brand-blue-dark);
+    position: relative;
+    padding: 15px 0;
+}
+
+/* Clinix pattern pattern.png mock using CSS or similar if needed, 
+   but for now we'll stick to the solid thick border as per basic template style */
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.logoImage {
+    height: 100px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.logoImage:hover {
+    transform: scale(1.05);
+}
+
+.nav {
+    flex: 1;
+}
+
+.navGroups {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mainNav,
+.secondaryNav {
+    display: flex;
+    gap: 20px;
+}
+
+.navItem a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+@media (min-width: 993px) {
+    .navItem a {
+        font-size: 18px;
+    }
+
+    .actions a {
+        font-size: 18px;
+    }
+}
+
+.navItem a:hover {
+    color: var(--text-muted);
+    /* Clinix uses grey for hover in some cases, or blue */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: var(--dark);
+}
+
+@media (max-width: 1300px) {
+    .container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .secondaryNav {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .topBar {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .navActive {
+        height: auto;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navGroups {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mainNav,
+    .secondaryNav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

@@ -1,0 +1,59 @@
+.banner {
+    background: linear-gradient(rgba(39, 77, 168, 0.8), rgba(39, 77, 168, 0.8)), url('https://images.unsplash.com/photo-1506784919140-587094291ad5?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin-top: var(--header-height);
+    text-align: center;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.noticeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background: white;
+}
+
+.noticeTable th {
+    background: var(--brand-blue-dark);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.noticeTable td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.noticeTable tr:hover {
+    background: #f9f9f9;
+}
+
+.tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.tagNotice {
+    background: #ffeded;
+    color: #ff4d4d;
+}
+
+.tagUpdate {
+    background: #e8f4ff;
+    color: #375ebc;
+}
+
+@media (max-width: 600px) {
+    .hideMobile {
+        display: none;
+    }
+}
