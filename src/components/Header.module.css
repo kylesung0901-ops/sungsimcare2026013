@@ -137,6 +137,19 @@
         display: none;
     }
 
+    .mainNavContainer .container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .actions {
+        order: 3;
+        margin-left: auto;
+    }
+
     .nav {
         position: fixed;
         top: var(--header-height);
@@ -147,6 +160,7 @@
         overflow: hidden;
         transition: height 0.3s ease-in-out;
         z-index: 999;
+        order: 4;
     }
 
     .navActive {
@@ -171,5 +185,11 @@
 
     .hamburger {
         display: flex;
+        order: 2;
+    }
+
+    .actions a {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
