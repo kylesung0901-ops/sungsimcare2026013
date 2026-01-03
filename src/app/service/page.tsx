@@ -48,20 +48,52 @@ export default function ServicePage() {
 
             <section className={styles.introSection}>
                 <div className="container">
+                    <div className="text-center" style={{ textAlign: 'center', marginBottom: '60px' }}>
+                        <h3 className="heading-decorate heading-decorate-center text-bold">신속하고 진실된 서비스를 선보이는<br />성심 병원동행 서비스</h3>
+                        <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--text-main)', marginTop: '20px' }}>
+                            현대사회는 고령화 시대라는 새로운 도전에 직면하고 있습니다.<br />
+                            고령화 시대 도움이 필요한 어르신들에게 전문적인 병원동행 서비스를 제공하여<br />
+                            어르신들의 삶의 질 향상을 위해 노력하는 성심 병원동행 서비스 매니저입니다.
+                        </p>
+                    </div>
+
                     <div className={styles.grid}>
                         <div className={styles.textContent}>
-                            <h3 className="heading-decorate text-bold">"집에서 병원, 다시 집으로!<br />부모님의 병원 가는 길을 책임집니다."</h3>
-                            <p>
-                                거동이 불편하시거나 혼자 병원 가기 두려운 어르신들을 위해,<br />
-                                자택 출발부터 진료 후 귀가까지 전 과정을 전문 매니저가 동행합니다.
+                            <h4 className="text-bold" style={{ fontSize: '22px', marginBottom: '20px', color: 'var(--brand-blue)' }}>
+                                믿고 맡길 수 있는 전문 서비스
+                            </h4>
+                            <p style={{ lineHeight: '1.9', marginBottom: '20px' }}>
+                                믿고 우리 부모님에게 서비스를 제공할 병원동행 매니저를 통해 어르신들의 행복한 노후 생활을 지원할 수 있도록
+                                지속적인 노력과 친근하고 전문적인 서비스를 제공하기 위하여 항상 최선의 노력을 다하겠습니다.
                             </p>
-                            <p>
-                                자녀분들이 바쁜 일상 속에서도 안심하실 수 있도록 실시간 상황 보고와<br />
-                                상세한 진료 리포트를 제공해 드립니다.
+                            <p style={{ lineHeight: '1.9', marginBottom: '20px' }}>
+                                저희 성심 병원동행 서비스는 어르신들의 안녕과 행복을 최우선으로 생각하며,
+                                어르신들에게 편안하고 안전한 일상생활을 제공하기 위해 최선을 다하고 있습니다.
                             </p>
                         </div>
                         <div className={styles.imageContainer}>
                             <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" alt="Hospital Service" />
+                        </div>
+                    </div>
+
+                    <div className={styles.grid} style={{ marginTop: '60px', flexDirection: 'row-reverse' }}>
+                        <div className={styles.textContent}>
+                            <h4 className="text-bold" style={{ fontSize: '22px', marginBottom: '20px', color: 'var(--brand-blue)' }}>
+                                검증된 전문 매니저
+                            </h4>
+                            <p style={{ lineHeight: '1.9', marginBottom: '20px' }}>
+                                병원동행 서비스 매니저는 검증된 교육기관으로부터 수료증을 수료한 믿을 수 있는 전문가입니다.
+                            </p>
+                            <p style={{ lineHeight: '1.9', marginBottom: '20px' }}>
+                                따뜻한 마음과 책임감으로 일상생활 도움 등 다양한 영역에서 도움을 제공하고,
+                                어르신들과의 상호작용과 의사소통에 능숙하며 친근하고 전문적인 서비스를 제공하고 있습니다.
+                            </p>
+                            <div style={{ marginTop: '30px' }}>
+                                <a href="/contact" className="btn-clinix">문의하기</a>
+                            </div>
+                        </div>
+                        <div className={styles.imageContainer}>
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Professional Manager" />
                         </div>
                     </div>
                 </div>
