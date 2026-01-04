@@ -1,11 +1,10 @@
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1554224155-1696413575a8?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
+    background-color: var(--brand-green);
     padding: 120px 0;
     margin-top: var(--header-height);
+    margin-bottom: var(--banner-margin-bottom);
     text-align: center;
-    color: var(--white);
+    color: var(--dark);
 }
 
 .banner h2 {
@@ -13,18 +12,18 @@
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: var(--dark);
 }
 
 .banner p {
     font-size: 18px;
-    font-weight: 300;
-    opacity: 0.9;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    color: var(--dark);
+    opacity: 0.8;
 }
 
 .section {
-    padding: 80px 0;
+    padding: var(--section-padding);
 }
 
 .bgWhite {

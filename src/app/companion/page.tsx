@@ -8,8 +8,8 @@ export default function CompanionPage() {
             <Header />
             <div className={styles.banner}>
                 <div className="container">
-                    <h2 className="text-uppercase text-bold color-white" style={{ color: 'white', fontWeight: 'bold' }}>병원동행매니저</h2>
-                    <p style={{ color: 'white' }}>Hospital Accompaniment Manager</p>
+                    <h2 className="text-uppercase text-bold" style={{ fontWeight: 'bold' }}>병원동행매니저</h2>
+                    <p>Hospital Accompaniment Manager</p>
                 </div>
             </div>
 

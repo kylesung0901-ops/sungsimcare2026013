@@ -34,17 +34,6 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.topBar}>
-        <div className={`${styles.container} container`}>
-          <div className={styles.topInfo}>
-          </div>
-          <div className={styles.topContact}>
-            <span><i className="fas fa-phone"></i> 010-5756-9857</span>
-            <span><i className="fas fa-envelope"></i> contact@sungsim.care</span>
-          </div>
-        </div>
-      </div>
-
       <nav id="sticktop" className={styles.mainNavContainer}>
         <div className={`${styles.container} container`}>
           <div className={styles.logo}>

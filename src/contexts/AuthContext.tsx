@@ -28,6 +28,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
+        if (!app) {
+            setLoading(false);
+            return;
+        }
         const auth = getAuth(app);
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user);
@@ -39,11 +43,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
     const login = async (email: string, password: string) => {
+        if (!app) throw new Error("Firebase not initialized");
         const auth = getAuth(app);
         await signInWithEmailAndPassword(auth, email, password);
     };
 
     const logout = async () => {
+        if (!app) return;
         const auth = getAuth(app);
         await signOut(auth);
     };

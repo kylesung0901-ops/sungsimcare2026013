@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
+import FloatingCallButton from "@/components/FloatingCallButton";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,6 +33,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <AuthProvider>
           {children}
+          <FloatingCallButton />
         </AuthProvider>
       </body>
     </html>

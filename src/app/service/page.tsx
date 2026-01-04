@@ -7,32 +7,32 @@ export default function ServicePage() {
         {
             number: "01",
             title: "예약 및 상담",
-            description: "고객센터나 홈페이지를 통해 문의하시면 담당 매니저가 친절히 상담해 드립니다."
+            description: <>고객센터나 홈페이지를 통해 문의하시면 담당 매니저가 <br className="pc-only-br" />친절히 상담해 드립니다.</>
         },
         {
             number: "02",
             title: "이동 지원",
-            description: "매니저가 자택으로 방문하여 병원까지 안전하게 동행하며 이동을 돕습니다."
+            description: <>매니저가 자택으로 방문하여 병원까지 안전하게 동행하며 <br className="pc-only-br" />이동을 돕습니다.</>
         },
         {
             number: "03",
             title: "진료 접수/대기",
-            description: "병원 도착 후 진료 접수부터 대기 시간까지 곁에서 편안하게 함께합니다."
+            description: <>병원 도착 후 진료 접수부터 대기 시간까지 곁에서 <br className="pc-only-br" />편안하게 함께합니다.</>
         },
         {
             number: "04",
             title: "수납 및 약국 동행",
-            description: "진료가 끝난 후 수납 절차를 돕고, 약국에서 처방전을 일일이 챙겨드립니다."
+            description: <>진료가 끝난 후 수납 절차를 돕고, <br className="pc-only-br" />약국에서 처방전을 일일이 챙겨드립니다.</>
         },
         {
             number: "05",
             title: "안전한 귀가",
-            description: "모든 일정을 마친 후 다시 댁까지 안전하게 모셔다 드립니다."
+            description: <>모든 일정을 마친 후 다시 댁까지 안전하게 모셔다 드립니다.</>
         },
         {
             number: "06",
             title: "사후 리포트",
-            description: "보호자분께 진료 내용과 특이사항을 정리하여 상세하게 보고해 드립니다."
+            description: <>보호자분께 진료 내용과 특이사항을 정리하여 상세하게 <br className="pc-only-br" />보고해 드립니다.</>
         }
     ];
 
@@ -41,8 +41,14 @@ export default function ServicePage() {
             <Header />
             <div className={styles.banner}>
                 <div className="container">
-                    <h2 className="text-uppercase text-bold color-white" style={{ color: 'white', fontWeight: 'bold' }}>병원동행 서비스</h2>
-                    <p style={{ color: 'white' }}>Hospital Accompaniment Service</p>
+                    <h2 className="text-uppercase text-bold" style={{ fontWeight: 'bold' }}>병원동행 서비스</h2>
+                    <p>Hospital Accompaniment Service</p>
+                </div>
+            </div>
+
+            <div className={styles.middleImageSection}>
+                <div className="container">
+                    <img src="/Gemini_Generated_Image_5gx8c75gx8c75gx8.png" alt="Service Feature" className={styles.middleImage} />
                 </div>
             </div>
 
@@ -72,7 +78,7 @@ export default function ServicePage() {
                             </p>
                         </div>
                         <div className={styles.imageContainer}>
-                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" alt="Hospital Service" />
+                            <img src="/Gemini_Generated_Image_l5yyhdl5yyhdl5yy.png" alt="Hospital Service" />
                         </div>
                     </div>
 
@@ -93,7 +99,7 @@ export default function ServicePage() {
                             </div>
                         </div>
                         <div className={styles.imageContainer}>
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Professional Manager" />
+                            <img src="/Gemini_Generated_Image_yl0bahyl0bahyl0b.png" alt="Professional Manager" />
                         </div>
                     </div>
                 </div>

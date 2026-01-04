@@ -12,7 +12,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+const app = getApps().length > 0 
+    ? getApp() 
+    : (firebaseConfig.apiKey 
+        ? initializeApp(firebaseConfig) 
+        : null as any);
 
 // Initialize Analytics (only in client-side)
 const initializeAnalytics = async () => {

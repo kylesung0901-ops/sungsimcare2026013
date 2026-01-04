@@ -1,11 +1,10 @@
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581578731522-745bf05499dd?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
+    background-color: var(--brand-green);
     padding: 120px 0;
     margin-top: var(--header-height);
+    margin-bottom: var(--banner-margin-bottom);
     text-align: center;
-    color: var(--white);
+    color: var(--dark);
 }
 
 .banner h2 {
@@ -13,14 +12,14 @@
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: var(--dark);
 }
 
 .banner p {
     font-size: 18px;
-    font-weight: 300;
-    opacity: 0.9;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    color: var(--dark);
+    opacity: 0.8;
 }
 
 .contentSection {
@@ -43,16 +42,23 @@
     font-weight: 600;
 }
 
+.fullContent {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .values {
     margin-top: 40px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .valueItem {
     padding: 20px;
     background-color: var(--off-white);
-    border-left: 5px solid var(--brand-blue);
+    border-top: 5px solid var(--brand-blue);
+    text-align: center;
 }
 
 .imageContent img {
@@ -63,6 +69,10 @@
 
 @media (max-width: 992px) {
     .contentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .values {
         grid-template-columns: 1fr;
     }
 }

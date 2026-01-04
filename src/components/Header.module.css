@@ -43,9 +43,8 @@
 
 .mainNavContainer {
     background-color: var(--white);
-    border-bottom: 5px solid var(--brand-blue-dark);
     position: relative;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 /* Clinix pattern pattern.png mock using CSS or similar if needed, 

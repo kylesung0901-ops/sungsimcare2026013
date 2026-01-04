@@ -7,15 +7,18 @@
   --brand-blue-light: #78BCEE;
   --brand-blue-mid: #4CA5E8;
   --white: #FFFFFF;
-  --off-white: #EFF2F5;
+  --off-white: #FFFFFF;
   --dark: #323232;
   --text-main: #696969;
   --text-muted: #8F8F8F;
   --accent: #5EA9DD;
+  --brand-green: #8bfe39;
   /* Light blue hover */
 
   --max-width: 1600px;
-  --header-height: 170px;
+  --header-height: 140px;
+  --section-padding: 100px 0;
+  --banner-margin-bottom: 60px;
 }
 
 * {
@@ -127,5 +130,17 @@ h6 {
   .container {
     padding: 0 40px;
     max-width: 95%;
+  }
+}
+
+/* Utility for PC-only line breaks */
+.pc-only-br {
+  display: block;
+  content: "";
+}
+
+@media (max-width: 991px) {
+  .pc-only-br {
+    display: none;
   }
 }
