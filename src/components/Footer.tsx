@@ -6,7 +6,7 @@ const Footer = () => {
             <div className={`${styles.container} container`}>
                 <div className={styles.column}>
                     <h6 className="heading-decorate text-uppercase">ABOUT SUNGSIM</h6>
-                    <p>성심동행케어(주)는 보호자가 안심할 수 있는 최고의 <br className="pc-only-br" />병원 동행 서비스를 제공하는 차세대 돌봄 플랫폼입니다.</p>
+                    <p>성심동행케어(주)는 보호자가 안심할 수 있는 최고의 <br className="pc-only-br" />병원 <br className="mobile-only-br" />동행 서비스를 제공하는 차세대 돌봄 플랫폼입니다.</p>
                 </div>
 
                 <div className={styles.column}>

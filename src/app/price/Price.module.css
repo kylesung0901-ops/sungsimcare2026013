@@ -189,6 +189,12 @@
 }
 
 @media (max-width: 768px) {
+    .section p {
+        font-size: 14.5px;
+        line-height: 1.7;
+        padding: 0 10px;
+    }
+
     .priceGrid {
         grid-template-columns: 1fr;
     }

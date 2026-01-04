@@ -166,11 +166,22 @@
     }
 
     .textContent p {
-        font-size: 15px;
+        font-size: 14.5px;
         line-height: 1.8;
     }
 
     .processItem {
-        padding: 30px 20px;
+        padding: 40px 15px;
+    }
+
+    .processItem p {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 5px;
+    }
+
+    .processItem h4 {
+        margin-bottom: 12px;
+        font-size: 18px;
     }
 }

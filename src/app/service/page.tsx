@@ -7,32 +7,37 @@ export default function ServicePage() {
         {
             number: "01",
             title: "예약 및 상담",
-            description: <>고객센터나 홈페이지를 통해 문의하시면 담당 매니저가 <br className="pc-only-br" />친절히 상담해 드립니다.</>
+            description: <>고객센터나 홈페이지를 통해 문의하시면<br className="mobile-only-br" />
+                담당 매니저가 친절히 상담해 드립니다.</>
         },
         {
             number: "02",
             title: "이동 지원",
-            description: <>매니저가 자택으로 방문하여 병원까지 안전하게 동행하며 <br className="pc-only-br" />이동을 돕습니다.</>
+            description: <>매니저가 자택으로 방문하여 병원까지<br className="mobile-only-br" />
+                안전하게 동행하며 이동을 돕습니다.</>
         },
         {
             number: "03",
             title: "진료 접수/대기",
-            description: <>병원 도착 후 진료 접수부터 대기 시간까지 곁에서 <br className="pc-only-br" />편안하게 함께합니다.</>
+            description: <>병원 도착 후 진료 접수부터 대기 시간까지<br className="mobile-only-br" />
+                곁에서 편안하게 함께합니다.</>
         },
         {
             number: "04",
             title: "수납 및 약국 동행",
-            description: <>진료가 끝난 후 수납 절차를 돕고, <br className="pc-only-br" />약국에서 처방전을 일일이 챙겨드립니다.</>
+            description: <>진료가 끝난 후 수납 절차를 돕고, <br className="mobile-only-br" />약국에서 처방전을 일일이 챙겨드립니다.</>
         },
         {
             number: "05",
             title: "안전한 귀가",
-            description: <>모든 일정을 마친 후 다시 댁까지 안전하게 모셔다 드립니다.</>
+            description: <>모든 일정을 마친 후 다시 댁까지 안전하게<br className="mobile-only-br" />
+                모셔다 드립니다.</>
         },
         {
             number: "06",
             title: "사후 리포트",
-            description: <>보호자분께 진료 내용과 특이사항을 정리하여 상세하게 <br className="pc-only-br" />보고해 드립니다.</>
+            description: <>보호자분께 진료 내용과 특이사항을<br className="mobile-only-br" />
+                정리하여 상세하게 보고해 드립니다.</>
         }
     ];
 
@@ -56,10 +61,12 @@ export default function ServicePage() {
                 <div className="container">
                     <div className="text-center" style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <h3 className="heading-decorate heading-decorate-center text-bold">신속하고 진실된 서비스를 선보이는<br />성심 병원동행 서비스</h3>
-                        <p style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--text-main)', marginTop: '20px' }}>
-                            현대사회는 고령화 시대라는 새로운 도전에 직면하고 있습니다.<br />
-                            고령화 시대 도움이 필요한 어르신들에게 전문적인 병원동행 서비스를 제공하여<br />
-                            어르신들의 삶의 질 향상을 위해 노력하는 성심 병원동행 서비스 매니저입니다.
+                        <p className="intro-text" style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--text-main)', marginTop: '20px' }}>
+                            현대사회는 고령화 시대라는 새로운 도전에<br className="mobile-only-br" />
+                            직면하고 있습니다.<br />
+                            고령화 시대 도움이 필요한 어르신들에게 전문적인<br className="mobile-only-br" />
+                            병원동행 서비스를 제공하여 어르신들의 삶의 질<br className="mobile-only-br" />
+                            향상을 위해 노력하는 성심 병원동행 서비스 매니저입니다.
                         </p>
                     </div>
 

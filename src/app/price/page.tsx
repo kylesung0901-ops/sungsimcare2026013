@@ -44,7 +44,8 @@ export default function PricePage() {
                 <div className="container">
                     <div className="text-center" style={{ textAlign: 'center', marginBottom: '50px' }}>
                         <h3 className="heading-decorate heading-decorate-center text-bold">기본 서비스 요금</h3>
-                        <p>투명하고 합리적인 가격으로 전문적인 돌봄 서비스를 제공합니다.</p>
+                        <p>투명하고 합리적인 가격으로 전문적인<br className="mobile-only-br" />
+                            돌봄 서비스를 제공합니다.</p>
                     </div>
 
                     <div className={styles.priceGrid}>
@@ -63,7 +64,8 @@ export default function PricePage() {
                 <div className="container">
                     <div className="text-center" style={{ textAlign: 'center', marginBottom: '50px' }}>
                         <h3 className="heading-decorate heading-decorate-center text-bold">멤버십 패키지 (부가세 10% 포함)</h3>
-                        <p>합리적인 비용으로 프리미엄 케어 혜택을 누려보세요.</p>
+                        <p>합리적인 비용으로 프리미엄<br className="mobile-only-br" />
+                            케어 혜택을 누려보세요.</p>
                     </div>
 
                     <div className={styles.membershipGrid}>

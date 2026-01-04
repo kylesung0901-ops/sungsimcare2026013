@@ -144,3 +144,52 @@ h6 {
     display: none;
   }
 }
+
+/* Utility for Mobile-only line breaks */
+.mobile-only-br {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-only-br {
+    display: block;
+    content: "";
+  }
+}
+
+/* Ensure banners are well-centered on mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Reset any potential left-aligned text in banners */
+  [class*="banner"] {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    min-height: 200px !important;
+    padding: 60px 20px 40px 20px !important;
+    margin-top: var(--header-height) !important;
+  }
+
+  [class*="banner"] h2,
+  [class*="banner"] p {
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  [class*="banner"] h2 {
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+  }
+
+  [class*="banner"] p {
+    font-size: 16px !important;
+    opacity: 0.9 !important;
+  }
+}
