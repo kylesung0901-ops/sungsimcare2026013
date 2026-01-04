@@ -136,6 +136,14 @@
         display: none;
     }
 
+    .mainNavContainer {
+        padding: 8px 0;
+    }
+
+    .logoImage {
+        height: 60px;
+    }
+
     .mainNavContainer .container {
         justify-content: space-between;
     }
